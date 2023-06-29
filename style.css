@@ -5,13 +5,13 @@
 }
 #detalle{
     background-image: url("img/petalo.webp");
-    background-size: 150px 150px;
+    background-size: 200px 100px;
     background-repeat: no-repeat;
 }
 
 #preguntas{
     background-image: url("img/petalo.webp");
-    background-size: 300px 150px;
+    background-size: 200px 100px;
     background-repeat: no-repeat;
 }
 
