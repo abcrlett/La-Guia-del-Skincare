@@ -1,0 +1,101 @@
+#inicio{
+    background-image: url("img/linea-gruesa.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#detalle{
+    background-image: url("img/circulos.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#preguntas{
+    background-image: url("img/circulos.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-img-top{
+    width: auto !important;
+    object-fit: cover;
+    max-height: 200px;
+}
+
+img {
+   width: auto !important;
+    object-fit: cover;
+    max-height: 400px; 
+}
+            
+            @keyframes pipin {
+                            0% {
+                                fill: #EABAB8;
+                                transform: rotate(100deg);
+                                transform-origin: center center;
+                            }
+                            100% {
+                                fill: #EABAB8;
+                                transform: rotate(50deg);
+                                transform-origin: center center;
+                            }
+                        }
+                        path#logo {
+                            animation: pipin 2s alternate-reverse infinite;
+                        }
+                        .bd-mode-toggle {
+                        z-index: 1500;
+                        }
+
+
+                :root{
+                /* PENDIENTE */ 
+                --bs-body-font-family: 'Rajdhani', sans-serif;
+            }
+                [data-bs-theme="light"] { 
+                /* PENDIENTE */
+                --bs-link-color-rgb: 100, 100, 100;
+                --bs-body-bg: #faf9ce;
+            }
+
+                [data-bs-theme="dark"] { 
+                /* PENDIENTE */
+                --bs-link-color-rgb: 200, 200, 200;
+                --bs-body-bg: #221648;
+            }
+
+                .bd-mode-toggle { 
+                z-index: 1500; 
+            }
+                td span { background: #7d2121; color: white; padding: 0 0.175rem; border-radius: 50%; font-weight: bolder; }
+
+                #barra{
+                    background: #E8E6E7
+                }
+
+                .letras, a.letras, p.letras {
+                    color: #314026
+                }
+                .letritas, a.letritas, p.letritas {
+                    color: #637365
+                }
+                // required to get $orange variable
+                @import "functions"; 
+                @import "variables";
+
+                $primary: #E8E6E7; // A  set the $primary variable
+                $secondary: #314026; // E
+                $success: #EFDAC9; // B
+                $info: #EABAB8; // C
+                $warning: #637365; // D
+
+                // merge with existing $theme-colors map
+                $theme-colors: map-merge($theme-colors, (
+                    "primary": $primary,
+                    "secondary": $secondary,
+                    "success": $success,
+                    "info": $info,
+                    "warning": $warning
+                ));
+
+                // set changes
+                @import "bootstrap";
