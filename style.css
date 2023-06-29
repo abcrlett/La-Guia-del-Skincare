@@ -1,16 +1,16 @@
 #inicio{
-    background-image: url("img/linea-gruesa.png");
+    background-image: url("img/linea-gruesa.webp");
     background-size: cover;
     background-repeat: no-repeat;
 }
 #detalle{
-    background-image: url("img/circulos.png");
+    background-image: url("img/circulos.webp");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #preguntas{
-    background-image: url("img/circulos.png");
+    background-image: url("img/circulos.webp");
     background-size: cover;
     background-repeat: no-repeat;
 }
